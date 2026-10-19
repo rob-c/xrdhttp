@@ -26,7 +26,9 @@ jobs:
         with:
           package: xrdhttp
           check-dist: true
-          extras: testing
+          # Every public module is imported from the installed wheel:
+          # xrdhttp.s3 needs botocore and xrdhttp.testing needs xrdsec and pytest.
+          extras: s3,testing
 
   # Trusted publishing ties PyPI's trust to this job of this workflow, so the
   # upload stays here, in a job that only downloads what the build staged.
