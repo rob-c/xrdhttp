@@ -3,7 +3,7 @@
 Notable user-visible changes are recorded here. This project follows
 [Semantic Versioning](https://semver.org/).
 
-## [0.4.0] - Unreleased
+## [0.4.0] - 2026-10-19
 
 The first release: the HTTP protocol pieces xrdclient and xgfalclient each
 carried, as one library that knows nothing of either client.
