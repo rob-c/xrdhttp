@@ -56,6 +56,9 @@ jobs:
     uses: rob-c/xrd-devtools/.github/workflows/package.yml@main
     with:
       package: xrdhttp
+      # Every public module is imported from the installed wheel:
+      # xrdhttp.s3 needs botocore and xrdhttp.testing needs xrdsec and pytest.
+      extras: s3,testing
       packages: xrdcore xrdsec
       xrdcore-ref: ${{ inputs.xrdcore-ref || 'main' }}
       xrdsec-ref: ${{ inputs.xrdsec-ref || 'main' }}
