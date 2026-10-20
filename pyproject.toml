@@ -36,7 +36,7 @@ classifiers = [
 # ``xrdhttp.s3``, so it is the ``s3`` extra: a client with no S3 (xrdarc's
 # A-REX session) does not install it.
 dependencies = [
-  "xrdcore>=0.4.0,<0.5",
+  "xrdcore>=0.4.1,<0.5",
 ]
 
 [project.urls]
@@ -60,12 +60,12 @@ s3 = [
 # ``xrdhttp.testing.conformance`` - the client conformance suites - are
 # pytest classes and fixtures, so pytest comes with it.
 testing = [
-  "xrdsec>=0.4.0,<0.5",
+  "xrdsec>=0.4.1,<0.5",
   "pytest>=8",
 ]
 dev = [
   # The suite tests xrdhttp.testing too (the testing extra).
-  "xrdsec>=0.4.0,<0.5",
+  "xrdsec>=0.4.1,<0.5",
   "build>=1,<2",
   # The suite tests xrdhttp.s3 too (the s3 extra).
   "botocore>=1.35",

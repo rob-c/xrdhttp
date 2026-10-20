@@ -3,6 +3,10 @@
 Notable user-visible changes are recorded here. This project follows
 [Semantic Versioning](https://semver.org/).
 
+## [0.4.1] - Unreleased
+
+No changes of its own: released with the 0.4.1 chain (xrdsec, xrdclient and xgfalclient fixes, xrdarc's production fixes), whose packages share one version. Requires xrdcore and xrdsec 0.4.1.
+
 ## [0.4.0] - 2026-10-19
 
 The first release: the HTTP protocol pieces xrdclient and xgfalclient each
