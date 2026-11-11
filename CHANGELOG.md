@@ -5,6 +5,13 @@ Notable user-visible changes are recorded here. This project follows
 
 ## [0.4.1] - Unreleased
 
+### Tested
+
+- `davs://` is exercised end to end on **macOS** (Apple Silicon) with X.509
+  authentication against CERN EOS and the PIC Tier-1: streamed reads and writes,
+  cross-protocol copies and HTTP third-party copy (`--copy-mode pull`), including
+  multi-GB files.
+
 No changes of its own: released with the 0.4.1 chain (xrdsec, xrdclient and xgfalclient fixes, xrdarc's production fixes), whose packages share one version. Requires xrdcore and xrdsec 0.4.1.
 
 ## [0.4.0] - 2026-10-19
